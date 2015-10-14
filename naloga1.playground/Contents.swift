@@ -3,12 +3,12 @@
 import UIKit
 
 
-var stevec:integer_t = 5
+var stevilo:integer_t = 5
 
 
 func fiabonacci_iter(stevec:integer_t)->integer_t
 {
-    var prvi:integer_t  = 0
+    var prvi:integer_t = 0
     var drugi:integer_t = 1
     var sestevek:integer_t = 0
     
@@ -25,4 +25,5 @@ func fiabonacci_iter(stevec:integer_t)->integer_t
     return sestevek
 }
 
-print(fiabonacci_iter(stevec))
+
+print(fiabonacci_iter(stevilo))

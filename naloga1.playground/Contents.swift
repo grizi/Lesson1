@@ -3,7 +3,7 @@
 import UIKit
 
 
-var stevilo:integer_t = 5
+var stevilo:integer_t = 10
 
 
 func fiabonacci_iter(stevec:integer_t)->integer_t
@@ -25,5 +25,24 @@ func fiabonacci_iter(stevec:integer_t)->integer_t
     return sestevek
 }
 
+var v1:integer_t = 0
+var v2:integer_t = 1
+var v3:integer_t = 0
+
+func fiabonacci_rek(stevec:integer_t)->integer_t
+{
+    if stevec == 0
+    {
+        return v3
+    }
+    v3 = v2+v1
+    print(v3)
+    v1 = v2
+    v2 = v3
+    return fiabonacci_rek(stevec-1)
+
+}
 
 print(fiabonacci_iter(stevilo))
+
+print(fiabonacci_rek(stevilo))
